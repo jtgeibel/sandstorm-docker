@@ -1,5 +1,6 @@
 FROM ubuntu:12.04
 
+RUN apt-get update
 RUN apt-get install -y python-software-properties
 RUN apt-add-repository -y ppa:ubuntu-toolchain-r/ppa
 RUN apt-add-repository -y 'deb http://llvm.org/apt/precise/ llvm-toolchain-precise main'
